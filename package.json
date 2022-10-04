@@ -1,0 +1,26 @@
+{
+  "name": "core-js-oop-tdd-orange-tree",
+  "version": "1.0.0",
+  "description": "Фермер Федор заинтересован в создании модели своей апельсиновой фермы. Как доказательство своей концепции, он надеется смоделировать одно апельсиновое дерево и его ежегодное производство на протяжении всей его жизни. Федор начал работать над программой, но успех его фермы оставил ему совсем мало времени, чтобы продолжить разработку. Тебя наняли, чтобы сделать для него приложение.",
+  "main": "orange-tree.js",
+  "scripts": {
+    "test": "jest -i"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elbrus-Bootcamp/core-js-oop-tdd-orange-tree.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Elbrus-Bootcamp/core-js-oop-tdd-orange-tree/issues"
+  },
+  "homepage": "https://github.com/Elbrus-Bootcamp/core-js-oop-tdd-orange-tree#readme",
+  "devDependencies": {
+    "eslint": "^7.15.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "jest": "^26.6.3"
+  }
+}
