@@ -1,6 +1,6 @@
-let orange = new Orange();
-let tree = new OrangeTree();
-const reportsBlock = document.getElementById("reports");
+const orange = new Orange();
+const tree = new OrangeTree();
+const reportsBlock = document.getElementById('reports');
 
 // Let seasons pass until the tree is ready to bear fruit.
 while (!tree.isMature()) {
@@ -10,16 +10,17 @@ while (!tree.isMature()) {
 // Report yearly harvest information for the lifetime of the tree.
 while (!tree.isDead()) {
   tree.passGrowingSeason();
-  let harvestedOranges = [];
+  const harvestedOranges = [];
 
   while (tree.hasOranges()) {
     harvestedOranges.push(tree.pickAnOrange());
   }
 
   let averageOrangeDiameter;
-  // averageOrangeDiameter = Need to calculate the average diameter for the harvest.
+  averageOrangeDiameter = harvestedOranges.reduce(
+    (acc, current) => acc + current.diameter, 0) / harvestedOranges.length;
 
-  const report = document.createElement("div");
+  const report = document.createElement('div');
   report.innerHTML = `
       <b>HARVEST_REPORT</b>
       <br/>
@@ -39,6 +40,6 @@ while (!tree.isDead()) {
   reportsBlock.appendChild(report);
 }
 
-const lastReport = document.createElement("div");
-lastReport.innerHTML = "<h2>Alas, the tree, she is dead!</h2>";
+const lastReport = document.createElement('div');
+lastReport.innerHTML = '<h2>Alas, the tree, she is dead!</h2>';
 reportsBlock.appendChild(lastReport);
